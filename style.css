@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: 'NetflixSans';
+  src: url('fonts/NetflixSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:black;
+}
+.main{
+    background: url('assets/bg.jpg') center center / cover no-repeat;
+
+    height: 100vh;
+    position: relative;
+    background-size:max (1200px, 100vw) ;
+    
+}
+.main .box{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    
+    
+    
+}
+nav{
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative; /* Add this */
+    z-index: 10;         /* Add this */
+    
+   
+}
+nav img{
+    color: red;
+    width: 148px;
+    /* position: relative;
+    z-index: 10; */
+    height: 40px;
+
+}
+
+.hero{
+    color: white;
+    /* font-size: 20px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding:0 30px;
+    
+}
+.hero h1{
+     font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+.hero p{
+    font-family: NetflixSans;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.hero h3{
+    font-family: NetflixSans;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.line{
+    background-color:rgb(46, 44, 44);
+    height: 7px;
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 8px 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    line-height: 1.5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    
+    
+}
+.hero-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.main input{
+    padding: 14px 101px 14px 14px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border: 1px solid #4a908e;
+    caret-color: white;
+    
+    
+
+}
+.hero-btns button svg{
+    width:1.5rem;
+    height:inherit;
+    margin-left:0.5rem;
+    
+}
+.trending-now{
+    max-width: 80vw;
+    margin: auto;
+    /* display: flex; */
+    background-color: black;
+    /* margin-top: 50px; */
+    position: relative;
+    overflow: hidden;
+    /* height: auto; */
+    padding: 40px 5%;
+    
+}
+
+.trending-now h2{
+    margin-bottom: 0.1rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    
+}
+.scroll-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    
+    
+}
+.trending-cards{
+    display: flex;
+    overflow-x: auto;
+    gap: 38px;
+    scrollbar-width: none;
+    background-color: black;
+    
+}
+.trending-cards::-webkit-scrollbar {
+  display: none; 
+}
+.card{
+    position: relative;
+    flex: 0 0 auto;
+    width: 20%;
+}
+.card img{
+    width: 100;
+    border-radius: 10px;
+    transition:transform 0.3s ease ;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+.rank{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 14px;
+    left: -6px;
+    font-size: 100px;
+    color: black;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px white;
+    z-index: 2;
+}
+.scroll-btn {
+  background-color: rgb(26,26,26);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 40px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 5;
+  
+}
+.scroll-btn.left {
+  left: 0;
+  
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+.join h2{
+    margin-bottom: 0.1rem;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    /* padding-left: 10px; */
+    
+}
+.join{
+    max-width: 80vw;
+    margin: auto;
+    /* display: flex; */
+    background-color:black;
+    /* margin-top: 50px; */
+    position: relative;
+    overflow: hidden;
+    /* height: auto; */
+    padding: 40px 5%;
+    
+}
+.join-cards{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none;
+    background-color: black;
+}
+ .join-card{
+    position: relative;
+    /* flex: 0 0 auto; */
+    width: 25%;
+    background-color: rgb(30,22,43);
+    border-radius: 10px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+.join-card h2{
+    
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 25px 15px;
+
+    
+}
+.join-card p{
+    
+    color:rgba(255, 255, 255, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 0px 15px;
+
+    
+}
+.svg-img{
+    position: absolute;
+    bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.faq{
+    background-color: black;
+    color: white;
+     max-width: 80vw;
+    margin: auto;
+    /* display: flex; */
+    background-color: black;
+    /* margin-top: 50px; */
+    position: relative;
+    overflow: hidden;
+    /* height: auto; */
+    padding: 40px 5%;
+}
+.faqbox{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(45,45,45);
+    justify-content: space-between;
+    line-height: 3.3;
+    cursor: pointer;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.faq h2{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 100pxpx 15px;
+    margin-bottom: 20px;
+    
+    
+}
+.faqbox h3{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+
+
+
+.end{
+    color: white;
+    /* font-size: 20px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding:0 30px;
+    
+}
+.end h3{
+    font-family: NetflixSans;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.end input{
+    padding: 14px 300px 14px 14px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    background-color: rgba(23, 23, 23, 0.3);
+    border: 1px solid #4a908e;
+    caret-color: white;
+}
+.footer {
+  max-width: 80vw;
+    margin: auto;
+    /* display: flex; */
+    background-color: black;
+    /* margin-top: 50px; */
+    position: relative;
+    /* overflow: hidden; */
+    /* height: auto; */
+    padding: 40px 5%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  
+}
+.footer-title{
+    margin-bottom: 40px;
+}
+.footer-title a{
+    color: rgba(255,255,255,0.7);
+  text-decoration: underline;
+  text-decoration-color:rgba(255,255,255,0.7) ;
+}
+
+.footer-links{
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px 20px;
+     margin-bottom: 30px;
+
+}
+.footer-links a{
+    display: block;
+    margin: 10px 0;
+    color: rgba(255,255,255,0.7);
+    text-decoration: underline;
+    text-decoration-color:rgba(255,255,255,0.7) ;
+}
+ select{
+    background-color: #111;
+  color: white;
+  border: 1px solid #333;
+  padding: 8px 25px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.footer-country,
+.footer-note {
+  color: rgba(255,255,255,0.7);
+  margin: 20px 0;
+}
+
+.footer-note a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: underline;
+  color: rgb(57,142,244);
+}
